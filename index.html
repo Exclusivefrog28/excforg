@@ -7,10 +7,29 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="force-center">
-        <h1 id="title" class="font-mono title">
+    <div id="hero" class="w-full h-full absolute left-0 top-0 transition-all duration-300">
+        <div class="force-center">
+            <h1 id="title" class="font-mono title"></h1>
+            <p id="anykey" class="w-full text-center font-mono opacity-0 transition-opacity duration-1000 data-[show=true]:animate-pulse">press any key</p>
+        </div>
+    </div>
+    <div id="content" class="container mx-auto pt-16 hidden flex-col">
+        <div class="flex flex-row gap-4 w-max border-2 rounded-2xl border-white/30 p-4">
+            <img src="assets/chess.png" class="w-24 h-24" alt="chess engine logo">
+            <div class="flex flex-col justify-between">
+                <div>
+                    <a class="font-mono text-2xl" href="https://chess.excf.org">chess.excf.org</a>
+                    <p class="font-mono">chess engine written in C++ and compiled to WebAssembly</p>
+                </div>
+                <div class="flex flex-row gap-2">
+                    <a href="https://chess.excf.org" aria-label="link to the project website"><img src="assets/link.svg" class="w-6 h-6" alt="link icon"></a>
+                    <a href="https://github.com/Exclusivefrog28/chessengine" aria-label="link to the repository"><img src="assets/gh.png" class="w-6 h-6" alt="github logo"></a>
+                </div>
+            </div>
+        </div>
+        <div>
 
-        </h1>
+        </div>
     </div>
     <script src="app.js"></script>
 </body>

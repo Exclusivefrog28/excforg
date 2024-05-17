@@ -29,5 +29,7 @@ body {
 }
 
 @keyframes cursor {
-    50% {border-color: transparent}
+    50% {
+        border-color: transparent
+    }
 }

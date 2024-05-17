@@ -25,6 +25,7 @@ const first = setInterval(() => {
                                             title.innerText += thirdText[title.innerText.length]
                                             if (title.innerText.length === thirdText.length) {
                                                 clearInterval(third);
+                                                document.getElementById('anykey').dataset.show = 'true';
                                             }
                                         }, 250)
                                     }
@@ -38,3 +39,17 @@ const first = setInterval(() => {
     }
 }, 100);
 
+window.addEventListener('keydown', () => {
+    anykeypressed();
+})
+window.addEventListener('click', () => {
+    anykeypressed();
+})
+
+const anykeypressed = () => {
+    document.getElementById('hero').style.transform = 'translateY(-100%)';
+    setTimeout(() => {
+        document.getElementById('hero').style.display = 'none';
+        document.getElementById('content').style.display = 'flex';
+    }, 300);
+}
