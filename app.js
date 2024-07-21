@@ -3,6 +3,7 @@ const title = document.getElementById('title')
 const firstText = 'exclusivefrog28'
 const secondText = 'excfrog'
 const thirdText = 'excf.org'
+
 const first = setInterval(() => {
     title.innerText += firstText[title.innerText.length]
     if (title.innerText.length === firstText.length) {

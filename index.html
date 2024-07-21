@@ -7,40 +7,79 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="hero" class="w-full h-full absolute left-0 top-0 transition-all duration-300">
-        <div class="force-center">
-            <h1 id="title" class="font-mono title"></h1>
-            <p id="anykey" class="w-full text-center font-mono opacity-0 transition-opacity duration-1000 data-[show=true]:animate-pulse">press any key</p>
-        </div>
+<div id="hero" class="w-full h-full absolute left-0 top-0 transition-all duration-300">
+    <div class="force-center">
+        <h1 id="title" class="font-mono title"></h1>
+        <p id="anykey" class="w-full text-center font-mono opacity-0 transition-opacity duration-1000 data-[show=true]:animate-pulse">press any key</p>
     </div>
-    <div id="content" class="container mx-auto pt-16 hidden flex-col gap-16 items-center w-max">
-        <div class="flex flex-row gap-4 w-full border-2 rounded-2xl border-white/30 p-4">
-            <img src="assets/chess.png" class="w-24 h-24" alt="chess engine logo">
-            <div class="flex flex-col justify-between">
-                <div>
-                    <a class="font-mono text-2xl" href="https://chess.excf.org">chess.excf.org</a>
-                    <p class="font-mono">chess engine written in C++ and compiled to WebAssembly</p>
-                </div>
-                <div class="flex flex-row gap-2">
-                    <a href="https://chess.excf.org" aria-label="link to the project website"><img src="assets/link.svg" class="w-6 h-6" alt="link icon"></a>
-                    <a href="https://github.com/Exclusivefrog28/chessengine" aria-label="link to the repository"><img src="assets/gh.png" class="w-6 h-6" alt="github logo"></a>
-                </div>
+</div>
+<div id="content" class="container mx-auto pt-16 flex-col gap-8 items-center w-max hidden">
+    <div class="flex flex-row gap-4 w-full rounded-2xl p-4 items-center neumorphic hover:scale-105 transition-transform ease-in-out duration-300">
+        <a href="https://chess.excf.org">
+            <img src="assets/chess.png" class="w-24 h-24" alt="chess engine icon">
+        </a>
+        <div class="flex flex-col justify-between">
+            <div>
+                <a class="font-mono text-2xl" href="https://chess.excf.org">chess engine</a>
+                <p class="font-mono">C++ - WebAssembly - Python</p>
+                <p class="font-mono text-sm my-3 italic">B.Sc. thesis project</p>
             </div>
-        </div>
-        <div class="flex flex-row gap-4 w-full border-2 rounded-2xl border-white/30 p-4">
-            <img src="assets/weather.png" class="w-24 h-24" alt="chess engine logo">
-            <div class="flex flex-col justify-between">
-                <div>
-                    <a class="font-mono text-2xl" href="https://chess.excf.org">weather recall</a>
-                    <p class="font-mono">weather app that shows the past instead of forecasts</p>
-                </div>
-                <div class="flex flex-row gap-2">
-                    <a href="https://github.com/Exclusivefrog28/weatherRecall/releases" aria-label="link to the project website"><img src="assets/link.svg" class="w-6 h-6" alt="link icon"></a>
-                    <a href="https://github.com/Exclusivefrog28/weatherRecall" aria-label="link to the repository"><img src="assets/gh.png" class="w-6 h-6" alt="github logo"></a>
-                </div>
+            <div class="flex flex-row gap-2">
+                <a href="https://chess.excf.org" aria-label="link to the project website"><img src="assets/link.svg" class="w-6 h-6" alt="link icon"></a>
+                <a href="https://github.com/Exclusivefrog28/chessengine" aria-label="link to the repository"><img src="assets/gh.png" class="w-6 h-6" alt="github logo"></a>
             </div>
         </div>
     </div>
-    <script src="app.js"></script>
+    <div class="flex flex-row gap-4 w-full rounded-2xl p-4 items-center neumorphic hover:scale-105 transition-transform ease-in-out duration-300">
+        <a href="https://github.com/Exclusivefrog28/weatherRecall/releases">
+            <img src="assets/weather.png" class="w-24 h-24" alt="weather app icon">
+        </a>
+        <div class="flex flex-col justify-between">
+            <div>
+                <a class="font-mono text-2xl" href="">reverse weather app</a>
+                <p class="font-mono">Android - React Native</p>
+                <p class="font-mono text-sm my-3 italic">shows past weather instead of future predictions</p>
+            </div>
+            <div class="flex flex-row gap-2">
+                <a href="https://github.com/Exclusivefrog28/weatherRecall/releases" aria-label="link to the project website"><img src="assets/link.svg" class="w-6 h-6"
+                                                                                                                                  alt="link icon"></a>
+                <a href="https://github.com/Exclusivefrog28/weatherRecall" aria-label="link to the repository"><img src="assets/gh.png" class="w-6 h-6" alt="github logo"></a>
+            </div>
+        </div>
+    </div>
+    <div class="flex flex-row gap-4 w-full rounded-2xl p-4 items-center neumorphic hover:scale-105 transition-transform ease-in-out duration-300">
+        <a href="https://evp-11-csapat.github.io/webgpu-mandelbrot">
+            <img src="assets/mandelbrot.png" class="w-24 h-24 filter invert" alt="mandelbrot set icon">
+        </a>
+        <div class="flex flex-col justify-between">
+            <div>
+                <a class="font-mono text-2xl" href="">WebGPU Mandelbrot set</a>
+                <p class="font-mono">WebGPU - JavaScript</p>
+                <p class="font-mono text-sm my-3 italic">runs on the GPU with polyfilled 64 bit precision</p>
+            </div>
+            <div class="flex flex-row gap-2">
+                <a href="https://evp-11-csapat.github.io/webgpu-mandelbrot" aria-label="link to the project website"><img src="assets/link.svg" class="w-6 h-6" alt="link icon"></a>
+                <a href="https://github.com/EVP-11-csapat/webgpu-mandelbrot" aria-label="link to the repository"><img src="assets/gh.png" class="w-6 h-6" alt="github logo"></a>
+            </div>
+        </div>
+    </div>
+    <div class="flex flex-row gap-4 w-full rounded-2xl p-4 items-center neumorphic hover:scale-105 transition-transform ease-in-out duration-300">
+        <a href="/nbody">
+        <img src="assets/gravity.png" class="w-24 h-24 filter invert" alt="gravity icon">
+        </a>
+        <div class="flex flex-col justify-between">
+            <div>
+                <a class="font-mono text-2xl" href="/nbody">WebGPU N-body gravity</a>
+                <p class="font-mono">WebGPU - JavaScript</p>
+                <p class="font-mono text-sm my-3 italic">calculates mutual attraction of bodies on the GPU </p>
+            </div>
+            <div class="flex flex-row gap-2">
+                <a href="/nbody" aria-label="link to the project website"><img src="assets/link.svg" class="w-6 h-6" alt="link icon"></a>
+                <a href="https://github.com/Exclusivefrog28/webgpu-nbody" aria-label="link to the repository"><img src="assets/gh.png" class="w-6 h-6" alt="github logo"></a>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="app.js"></script>
 </body>
 </html>
